@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/toast.sh 'Needs your attention'"
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/toast.sh 'Needs your attention'"
           }
         ]
       }
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/toast.sh 'Task complete'"
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/toast.sh 'Task complete'"
           }
         ]
       }
