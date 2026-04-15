@@ -1,0 +1,13 @@
+{
+  "name": "claude-wsl-toast",
+  "owner": {
+    "name": "rcn123"
+  },
+  "plugins": [
+    {
+      "name": "claude-wsl-toast",
+      "source": ".",
+      "description": "Windows toast notifications for Claude Code running in WSL. Suppresses toasts when the project's terminal is the active foreground window."
+    }
+  ]
+}
