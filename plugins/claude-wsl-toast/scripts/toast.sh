@@ -24,8 +24,11 @@ PROJECT="$(basename "$CWD")"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PS1_WIN="$(wslpath -w "$SCRIPT_DIR/toast.ps1")"
 
+HOTKEY="${CLAUDE_TOAST_HOTKEY:-ctrl+shift+space}"
+
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$PS1_WIN" \
   -Title "Claude Code — $PROJECT" \
   -Message "$MESSAGE" \
   -Project "$PROJECT" \
+  -Hotkey "$HOTKEY" \
   >/dev/null 2>&1 &
