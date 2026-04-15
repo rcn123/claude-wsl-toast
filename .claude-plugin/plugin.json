@@ -1,0 +1,6 @@
+{
+  "name": "claude-wsl-toast",
+  "version": "0.1.0",
+  "description": "Windows toast notifications for Claude Code running in WSL. Suppresses toasts when the project's terminal window is already focused.",
+  "author": "rcn123"
+}
